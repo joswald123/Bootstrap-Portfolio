@@ -68,36 +68,110 @@
     </div> -->
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-5">
-
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
-
+    
+        
+        <div class="box border-0">
+            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class='details'>
+                <h3>USA - San Leandro, CA</h3>
             </div>
-
-            <div class="col-md-12 mt-5">
-
-                <label for="exampleInputPassword1">Message</label>
-                <textarea class="form-control" id="user-input" placeholder="Type here your Message" rows="5"></textarea>
-
-            </div>
-
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-primary col-md-1 mt-5">Submit</button>
-            </div>
-
-
         </div>
+    
+        <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class='details'>
+                <h3>+1 510 561 8326</h3>
+            </div>
+        </div>
+    
+        <div class="box">
+            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class='details'>
+                <h3>julianaandreaoswald@gmail.com</h3>
+            </div>
+        </div>
+  
+</div>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #dadada;
+    }
 
+    .container {
+        width: 100%;
+        margin: 250px auto 0;
+        display: flex;
+    }
 
-    </div>
+    .container .box {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 10px;
+        background: #ca31ca;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0 0 0 2px rgba(0, 7, 10, 1);
+    }
 
+    .container .box .icon {
+        width: 100%;
+        height: 100%;
+        background: #6a6d6e;
+        transition: 0.5s;
+    }
 
-    </div>
+    .container .box .icon .fa {
+        font-size: 4em;
+        line-height: 100px;
+        color: #ecbaee;
+    }
+
+    .container .box:hover .icon {
+        transform: scale(0);
+    }
+
+    .container .box .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #911586;
+        color:#204969;
+        transition: 0.5s;
+        transform: scale(2);
+        filter: blur(2px);
+    }
+
+    .container .box:hover .details {
+        transform: scale(1);
+        opacity: 1;
+        filter: blur(0px);
+    }
+
+    .container .box .details h3 {
+        margin: 0;
+        padding: 0;
+        line-height: 100px;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .container .box .details:nth-child(2) .details {
+        background: #e91e63;
+    }
+
+    .container .box .details:nth-child(2) .details {
+        background: #607d8b;
+    }
+    
+
 
 
 
